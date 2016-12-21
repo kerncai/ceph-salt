@@ -1,0 +1,71 @@
+[base]
+name=CentOS-$releasever - Base (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/os/$basearch/
+gpgcheck=0
+enabled=1
+ 
+[updates]
+name=CentOS-$releasever - Updates (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/updates/$basearch/
+gpgcheck=0
+enabled=1
+ 
+[extras]
+name=CentOS-$releasever - Extras (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/extras/$basearch/
+gpgcheck=0
+enabled=1
+ 
+[centosplus]
+name=CentOS-$releasever - Plus (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/centosplus/$basearch/
+gpgcheck=0
+enabled=1
+ 
+[lopenstack]
+name=CentOS-$releasever - Lopenstack (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/cloud/$basearch/openstack-liberty/
+gpgcheck=0
+enabled=0
+ 
+[mopenstack]
+name=CentOS-$releasever - Mopenstack (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/cloud/$basearch/openstack-mitaka/
+gpgcheck=0
+enabled=0
+ 
+[epel]
+name=CentOS-$releasever - epel - $basearch (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/epel/7/$basearch/
+gpgcheck=0
+enabled=1
+ 
+[epelu-debuginfo]
+name=CentOS-$releasever - epel - $basearch - Debug (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/epel/7/$basearch/debug/
+gpgcheck=0
+enabled=1
+ 
+[epel-source]
+name=CentOS-$releasever - epel - $basearch - Source (YOVOLE)
+baseurl=http://10.1.0.20/yum_repo/epel/7/SRPMS/
+gpgcheck=0
+enabled=1
+ 
+[centos-qemu-ev]
+name=CentOS-$releasever - QEMU EV
+baseurl=http://10.1.0.20/yum_repo/centos/$releasever/virt/$basearch/kvm-common/
+gpgcheck=0
+enabled=1
+ 
+[ceph]
+name=Ceph packages for $basearch
+baseurl=http://10.1.0.20/yum_repo/ceph/rpm-jewel/el7/$basearch
+enabled=1
+gpgcheck=0
+[ceph-noarch]
+name=Ceph noarch packages
+baseurl=http://10.1.0.20/yum_repo/ceph/rpm-jewel/el7/noarch
+enabled=1
+gpgcheck=0
+
